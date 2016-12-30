@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <h1>Sistemas Operativos</h1>
+ </head>
+
+ <body>
+  <form method="post" action="/miConsola/">
+    <label id="lblComando" for="txtComando">Ingrese el comando:</label>
+    <input id="txtComando" name="comandoNuevo">
+    <input type="submit" value="Enviar">
+    <br/>
+    <h2>Respuestas</h2>
+    <textarea rows="4" cols="50" readonly="true"><%= @mensajeMostrar %>
+    </textarea>
+    <br/>
+  </form>
+  <h1><%= @mensajeMostrar %></h1>
+ </body>
+</html>
